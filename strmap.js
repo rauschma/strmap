@@ -90,6 +90,8 @@ define([],
         e.StrMap.prototype.toObject = function() {
             return copyOne({}, this._data, true);
         };
+        
+        e.StrMap.prototype.toJSON = e.StrMap.prototype.toObject;
 
         e.StrMap.prototype._copyProperties = function (args, override) {
             var target = this._data;
