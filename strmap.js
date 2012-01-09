@@ -11,12 +11,13 @@ define([],
         }
 
         /*
-         * Make sure that there never is a key "__proto__".
+         * Escape "bad" keys.
          * Exported for unit test.
          */
         e._escapeKey = function (key) {
-            if (key.indexOf("__proto__") >= 0) {
-                return "%"+key;
+            // We need to escape "__proto__", but also the (n times) escaped version of it, to avoid clashes
+            if (key.indexOf("__proto__") === 0) {
+                return key+"%";
             } else {
                 return key;
             }
