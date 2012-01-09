@@ -62,7 +62,7 @@ define([],
          */
         e.StrMap.prototype.hasKey = function (key) {
             key = e._escapeKey(key);
-            return hasOwnProperty.call(key);
+            return hasOwnProperty.call(this._data, key);
         };
 
         /**
