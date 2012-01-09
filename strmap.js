@@ -24,7 +24,6 @@ define([],
         }
 
         e.StrMap = function (obj) {
-            var that = this;
             this._data = {};
             if (obj instanceof Object) {
                 copyOne(this._data, obj, true);
