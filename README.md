@@ -14,5 +14,5 @@ Usage on Node.js (on browsers, you need an AMD-compatible script loader such as 
 Tests
 -----
 
-- Run the tests via [Mocha](http://visionmedia.github.com/mocha/).
+- Run the tests via [Mocha](http://mochajs.org/).
 - Assertion API: [expect.js](https://github.com/LearnBoost/expect.js).
